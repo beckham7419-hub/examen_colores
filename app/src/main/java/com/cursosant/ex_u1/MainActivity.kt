@@ -179,17 +179,13 @@ class MainActivity : AppCompatActivity() {
     fun registrarColor(color: Int) {
         if (!jugando) return
 
-        // Efecto visual al presionar
         prender(color, true)
         handler.postDelayed({ prender(color, false) }, 200)
 
-        // Agregar el color a la entrada del jugador
         entrada.add(color)
 
-        // Actualizar el texto para mostrar progreso
         txtSimondice.text = "Tu turno (${entrada.size}/${secuencia.size})"
 
-        // Si ya completó toda la secuencia, validar
         if (entrada.size == secuencia.size) {
             handler.postDelayed({
                 validarSecuencia()
@@ -200,7 +196,6 @@ class MainActivity : AppCompatActivity() {
     fun validarSecuencia() {
         bloquearColores()
 
-        // Verificar si toda la secuencia es correcta
         var correcto = true
         for (i in entrada.indices) {
             if (entrada[i] != secuencia[i]) {
