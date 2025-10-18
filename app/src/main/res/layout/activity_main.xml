@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/txtSimondice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listo para jugar..."
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/txtHighScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/btnRojo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnVerde"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/verde"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/btnAzul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/azul"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnAmarillo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/amarillo"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar"
+            android:textSize="15dp"
+            android:layout_weight=".5"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnRendirse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rendirse"
+            android:textSize="15dp"
+            android:layout_weight=".5"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+</LinearLayout>
